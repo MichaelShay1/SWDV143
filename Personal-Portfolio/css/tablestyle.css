@@ -1,0 +1,24 @@
+/* table stylesheet */
+table{
+    width: 100%;
+    color: #00adb5;
+  }
+ td, th {
+      border: 2px solid black;
+  }
+caption {
+    font-size: 2em;
+    color: #222831;
+}
+thead {
+  font-size: 1.5em;
+}
+.link {
+  color: #00adb5;
+}
+.link:hover {
+  opacity: .7;
+}
+.link:visited {
+  color: #00565a;
+}

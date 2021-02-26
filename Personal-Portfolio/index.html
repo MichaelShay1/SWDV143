@@ -1,0 +1,156 @@
+<!--Michael Shay 11.11.2020-->
+<!--*******************************
+2.26.2021 - Modified Table to include personal projects and example work.
+
+
+
+
+***********************************-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Michael Shay">
+        <meta name="keywords" content="Michael Shay, CSS, HTML, C#">
+        <meta name="description" content="Michael Shay Portfolio">
+        <title>Michael Shay Portfolio</title>
+        <link rel="stylesheet" href="css/indexstyle.css">
+        <link rel="stylesheet" href="css/tablestyle.css">
+
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div id="navbar">
+                    <a href="#home" class="nav__link">Home</a>
+                    <a href="#experiences" class="nav__link">Experience</a>
+                    <a href="#about" class="nav__link">About</a>
+                    <a href="#contact" class="nav__link">Contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <!--Intro-->
+        <section class="intro" id="home">
+            <h1 class="Section__title section__title--intro">
+                Hi, I am <strong>Michael Shay</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Software Development Student</p>
+            <img src="images/GeneralShay.png" alt="a picture of Michael Shay" class="intro__img">
+        </section>
+
+        <!--Experience-->
+        <section class="my-experience" id="experiences">
+            <h2 class="section__title section__title--experience">My Experience</h2>
+            <div class="My Experience">
+                <div class="exp-desc">
+                    <h3>C#</h3>
+                    <p>I have basic skills in C# development that I am always improving upon.</p>
+                </div> <!--close desc -->
+                <div class="exp-desc">
+                    <h3>HTML and CSS</h3>
+                    <p> I have worked to develop this site using HTML and CSS as well as taken multiple classes.</p>
+                </div> <!--close desc -->
+                <div class="exp-desc">
+                    <h3>Javascript</h3>
+                    <p>I have taken classes that have covered the basics of Javascript and will continue to go further into it in the future.</p>
+                </div> <!--close desc -->
+            </div><!--close experience-->
+
+            <a href="#about" class="btn">About Me</a>
+        </section>
+
+        <!--About Me-->
+        <section class="about-me" id="about">
+            <h2 class="section__title section___title--about">Who I am</h2>
+            <p class="section__subtitle section__subtitle--about">Beginner Developer based in Boise, ID</p>
+
+            <div class="about-me__body">
+                <p>
+                    I am in the process of completing the Software Development program at CWI. I currently know C#, HTML, and a little bit of Javascript.
+                </p>
+                <p>
+                    I graduated in 2020 from Borah Highschool. I love traveling, backpacking, and music. I have a dog named <span style="color: #00adb5">Simonne.</span>
+                </p>
+            </div>
+            <table class="tableStyle">
+                <caption>Personal Projects</caption>
+                <colgroup span="4" style="background-color: #222831;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Language</th>
+                        <th>Projects</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>HTML & Bootstrap</th>
+                        <th><a href="https://michaelshay1.github.io/Bootstrap-Site/index.html">Michael Shay Photography</a></th>
+                    </tr>
+                    <tr>
+                        <th>CSS</th>
+                        <th><a href="https://michaelshay1.github.io/animateBalloon/index.html">CSS Car & Balloon Animation</a></th>
+                    </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                      <th>Javascript</th>
+                        <th><a href="https://michaelshay1.github.io/Project3_site/index.html">Mont Blanc Coffeehouse</a></th>
+                  </tr>
+                </tfoot>
+            </table>
+            <img src="images/before.JPG" alt="picture of my dog because I don't take pictures of myself" class="about--me__img">
+        </section>
+
+        <!--Contact Me-->
+        <section class="contact-me" id="contact">
+            <h2>Contact Me</h2>
+            <div class="container">
+                <form action="mailto:michaelshay@my.cwi.edu?subject=PersonalPortfolioMail" enctype="text/plain" method="POST">
+                    <fieldset>
+
+                        <label for="Click">Click if you are not a robot</label>
+                        <input type="radio" id="Click" name="No" value="No"><br>
+
+                        <label for="fname">First Name: </label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..."><br>
+
+                        <label for="lname">Last Name: </label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your Last Name..."><br>
+
+                        <label for="country">Country: </label>
+                        <select id="country" name="country">
+                            <option value="USA">USA</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Mexico">Mexico</option>
+                        </select><br>
+
+                        <label for="email">Email: </label>
+                        <input type="text" id="email" name="email" placeholder="Enter your email..."><br>
+
+                        <label for="message">Message: </label>
+                        <textarea id="message" name="message" placeholder="Write your message..." style="height: 200px;"></textarea>
+
+                        <input type="submit" value="Submit" class="subButton">
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer class="footer">
+            <a href="mailto:20michaelshay02@gmail.com" class="footer__link">20michaelshay02@gmail.com</a><br>
+            <a href="tel:12088099135" class="footer__link">+1(208)809-9135</a>
+            <a href="https://www.linkedin.com/" target="blank" class="socials"><img src="images/linkedin-icon.png" alt="linkedin logo"></a>
+            <a href="https://github.com/MichaelShay1" target="blank" class="socials"><img src="images/github-icon.png" alt="github logo"></a>
+        </footer>
+
+        <script src="navbarjava.js"></script>
+    </body>
+</html>
