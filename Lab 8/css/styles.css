@@ -1,0 +1,27 @@
+
+.jumbotron {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 22em;
+}
+#inventory-btn {
+    margin-top: 2em;
+}
+.footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 2.5em 0;
+}
+.footer a {
+    color: inherit;
+    text-decoration: underline;
+}
+.footer__link {
+    font-size: medium;
+    font-weight: bold;
+}
+.footer__link:hover {
+    opacity: .7;
+}
